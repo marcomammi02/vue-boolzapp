@@ -121,6 +121,11 @@
 
 
 /* Contact list */
+.contact-list {
+    height: calc(100% - 162px);
+    overflow: auto;
+}
+
 .contact-list ul {
     list-style-type: none;
 }

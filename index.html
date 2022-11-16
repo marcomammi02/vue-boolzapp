@@ -61,12 +61,12 @@
             </div>
             <div class="contact-list">
                 <ul>
-                    <li class="contact-card">
+                    <li class="contact-card" v-for="(contactObj, i) in contacts" :key="contactObj.name">
                         <div class="name-and-img">
-                            <img class="profile-img" src="img/tony-stark.png" alt="">
+                            <img class="profile-img" :src="'img/' + contactObj.avatar" alt="">
                             <div>
-                                <p>Tony Stark</p>
-                                <p class="last-message">Ultimo messaggio:</p>
+                                <p>{{ contactObj.name }}</p>
+                                <p class="last-message">Ultimo messaggio: </p>
                             </div>
                         </div>
                         <p class="time">12:00</p>

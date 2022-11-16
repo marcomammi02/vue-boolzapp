@@ -99,6 +99,29 @@
     color: #757575;
 }
 
+
+/* Search section */
+.search-bar {
+    display: flex;
+    background-color: #eaeaea;
+    padding: 5px;
+}
+
+.search-btn {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid #000000;
+    border-right: transparent;
+    color: #757575;
+}
+
+.search-bar input {
+    width: 100%;
+    border: 1px solid #000000;
+    border-left: transparent;
+    outline: none;
+}
+
 /* ----- Chat side ----- */
 .chat-side {
     width: 60%;

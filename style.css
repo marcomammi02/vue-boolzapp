@@ -10,6 +10,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 
@@ -54,13 +55,9 @@
     padding: 5px;
 }
 
-.name-and-profile-img {
+.name-and-img {
     display: flex;
     align-items: center;
-}
-
-.name-and-profile-img p {
-    margin-left: 10px;
 }
 
 .my-profile-bar .icons i {
@@ -83,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .new-message-notifics-bar i {
@@ -120,6 +117,29 @@
     border: 1px solid #000000;
     border-left: transparent;
     outline: none;
+}
+
+
+/* Contact list */
+.contact-list ul {
+    list-style-type: none;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contact-card .last-message {
+    color: #757575;
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+.contact-card .time {
+    color: #757575;
+    font-size: .8rem;
 }
 
 /* ----- Chat side ----- */

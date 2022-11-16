@@ -1,6 +1,106 @@
+/* ----- General ----- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* ----- Background -----  */
+.background .bg-up {
+    background-color: #009688;
+    height: 20vh;
+}
+.background .bg-down {
+    background-color: #ffffff;
+    height: 80vh;
+}
+
+
+/* ----- Container ----- */
+.container {
+    width: 1100px;
+    height: 90vh;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+
+}
+
+/* ----- Contact side ----- */
+.contact-side {
+    width: 40%;
+    height: 100%;
+}
+
+
+/* My profile section */
+.my-profile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 5px;
+}
+
+.name-and-profile-img {
+    display: flex;
+    align-items: center;
+}
+
+.name-and-profile-img p {
+    margin-left: 10px;
+}
+
+.my-profile-bar .icons i {
+    color: #757575;
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+
+/* New notifics section */
+.new-message-notifics-bar {
+    background-color: #8edafc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bell-img {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.new-message-notifics-bar i {
+    color: #8edafc;
+    font-size: 1.3rem;
+}
+
+.new-message-notifics-bar p {
+    font-size: .9rem;
+}
+.new-message-notifics-bar a {
+    font-size: .8rem;
+    color: #757575;
+}
+
+/* ----- Chat side ----- */
+.chat-side {
+    width: 60%;
+    height: 100%;
 }

@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.my-profile-bar .icons i {
+.icons i {
     color: #757575;
     font-size: 1.3rem;
     margin-right: 8px;
@@ -151,4 +151,15 @@
 .chat-side {
     width: 60%;
     height: 100%;
+}
+
+
+/* Contact bar */
+.contact-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 5px;
+    border-left: 1px solid #757575;
 }

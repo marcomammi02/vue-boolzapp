@@ -62,11 +62,11 @@
             <div class="contact-list">
                 <ul>
                     <li class="contact-card" v-for="(contactObj, i) in contacts" :key="contactObj.name">
-                        <div class="name-and-img">
+                    <div class="name-and-img" @click="">
                             <img class="profile-img" :src="'img/' + contactObj.avatar" alt="">
                             <div>
                                 <p>{{ contactObj.name }}</p>
-                                <p class="last-message">Ultimo messaggio: {{ contactObj.messages[contactObj.messages.length - 1].message }}</p>
+                                <p class="last-message">{{ contactObj.messages[contactObj.messages.length - 1].message }}</p>
                             </div>
                         </div>
                         <p class="time">12:00</p>
@@ -77,8 +77,8 @@
         <div class="chat-side">
             <div class="contact-bar">
                 <div class="name-and-img">
-                    <img class="profile-img" src="img/natasha-romanoff.png" alt="">
-                    <p>Natasha Romanoff</p>
+                    <img class="profile-img" :src="'img/' + contacts[indexActiveContact].avatar" alt="">
+                    <p>{{ contacts[indexActiveContact].name }}</p>
                 </div>
                 <div class="icons">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -88,52 +88,8 @@
             </div>
 
             <div class="chat-area">
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud contact-message">
-                    <p>So andata a fa funghi!</p>
-                    <p class="message-time">12:00</p>
-                </div>
-                <div class="message-cloud my-message">
-                    <p>Eh hai fatto bene! </p>
+                <div v-for="(messageObj, i) in contacts[indexActiveContact].messages" class="message-cloud" :class="'message-' + messageObj.status">
+                    <p>{{ messageObj.message }}</p>
                     <p class="message-time">12:00</p>
                 </div>
             </div>

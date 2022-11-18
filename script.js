@@ -185,6 +185,14 @@ new Vue({
                     }
                 ],
             },
-            ]
+        ],
+
+        indexActiveContact: 0,
+
+    },
+    methonds: {
+        currentChat: () => {
+
+        }
     }
 });

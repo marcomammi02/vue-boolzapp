@@ -185,11 +185,11 @@
     border-radius: 12px;
 }
 
-.contact-message {
+.message-received {
     background-color: #ffffff;
 }
 
-.my-message {
+.message-sent {
     background-color: #d5f9ba;
     align-self: flex-end;
 }

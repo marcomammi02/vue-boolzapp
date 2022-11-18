@@ -191,8 +191,8 @@ new Vue({
 
     },
     methonds: {
-        currentChat: () => {
-
-        }
+        setIndexActiveContact(i) {
+            this.indexActiveContact = i;
+        },
     }
 });

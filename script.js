@@ -190,7 +190,7 @@ new Vue({
         indexActiveContact: 0,
 
     },
-    methonds: {
+    methods: {
         setIndexActiveContact(i) {
             this.indexActiveContact = i;
         },

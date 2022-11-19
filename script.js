@@ -188,11 +188,21 @@ new Vue({
         ],
 
         indexActiveContact: 0,
+        newMessage: '',
 
     },
     methods: {
         setIndexActiveContact(i) {
             this.indexActiveContact = i;
         },
+
+        sendMessage() {
+            this.contacts[this.indexActiveContact].messages.push({
+                    date: new Date().toISOString().replaceAll('-', '/').replace('T', ' ').split('.')[0],
+                    message: this.newMessage,
+                    status: 'sent',
+            });
+            this.newMessage = '';
+        }
     }
 });

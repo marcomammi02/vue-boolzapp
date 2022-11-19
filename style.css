@@ -134,6 +134,11 @@
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    cursor: pointer;
+}
+
+.active-contact {
+    background-color: #000000;
 }
 
 .contact-card .last-message {
@@ -220,4 +225,5 @@
     height: 35px;
     border: none;
     outline: none;
+    padding-left: 3px;
 }

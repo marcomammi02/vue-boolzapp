@@ -203,6 +203,13 @@ new Vue({
                     status: 'sent',
             });
             this.newMessage = '';
-        }
-    }
+            setTimeout(() => {
+                this.contacts[this.indexActiveContact].messages.push({
+                    date: new Date().toISOString().replaceAll('-', '/').replace('T', ' ').split('.')[0],
+                    message: 'Ok!',
+                    status: 'received',
+                });
+            }, 1000);
+        },
+    },
 });

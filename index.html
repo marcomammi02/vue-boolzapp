@@ -61,8 +61,8 @@
             </div>
             <div class="contact-list">
                 <ul>
-                    <li class="contact-card" v-for="(contactObj, i) in contacts" :class="[contacts.indexOf(contactObj) == indexActiveContact ? active-contact : '']" :key="contactObj.name"
-                    @click="setIndexActiveContact(i)"> <!-- Sistemare -->
+                    <li class="contact-card" v-for="(contactObj, i) in contacts" :class="[contacts.indexOf(contactObj) == indexActiveContact ? 'active-contact' : '']" :key="contactObj.name"
+                    @click="setIndexActiveContact(i)">
                     <div class="name-and-img">
                             <img class="profile-img" :src="'img/' + contactObj.avatar" alt="">
                             <div>

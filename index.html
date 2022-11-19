@@ -91,7 +91,7 @@
             <div class="chat-area">
                 <div v-for="(messageObj, i) in contacts[indexActiveContact].messages" class="message-cloud" :class="'message-' + messageObj.status">
                     <p>{{ messageObj.message }}</p>
-                    <p class="message-time">12:00</p>
+                    <p class="message-time">{{ messageObj.date }}</p>
                 </div>
             </div>
 

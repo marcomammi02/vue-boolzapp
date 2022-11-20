@@ -110,6 +110,7 @@
     border: 1px solid #000000;
     border-right: transparent;
     color: #757575;
+    cursor: pointer;
 }
 
 .search-bar input {

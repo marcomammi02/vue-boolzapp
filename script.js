@@ -189,6 +189,7 @@ new Vue({
 
         indexActiveContact: 0,
         newMessage: '',
+        searchName: '',
 
     },
     methods: {
@@ -211,5 +212,16 @@ new Vue({
                 });
             }, 1000);
         },
+
+        contactFinder(){
+            for(let i=0; i<this.contacts.length; i++){
+                if(this.contacts[i].name.includes(this.searchName)){
+                    this.contacts[i].visible = true
+                }
+                else{
+                    this.contacts[i].visible = false
+                }
+            };
+        },
     },
-});
+})

@@ -215,7 +215,7 @@ new Vue({
 
         contactFinder(){
             for(let i=0; i<this.contacts.length; i++){
-                if(this.contacts[i].name.includes(this.searchName)){
+                if(this.contacts[i].name.toLowerCase().includes(this.searchName.toLowerCase())){
                     this.contacts[i].visible = true
                 }
                 else{

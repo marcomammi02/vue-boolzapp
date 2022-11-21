@@ -154,6 +154,10 @@
     font-size: .8rem;
 }
 
+.card-visible-off {
+    display: none;
+}
+
 /* ----- Chat side ----- */
 .chat-side {
     width: 60%;
@@ -229,3 +233,4 @@
     outline: none;
     padding-left: 3px;
 }
+

@@ -54,14 +54,14 @@
                 </div>
             </div>
             <div class="search-bar">
-                <div class="search-btn" @click="contactFinder">
+                <div class="search-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <input type="text" placeholder="Cerca o inizia una nuova chat..." v-model="searchName" @keyup="contactFinder">
             </div>
             <div class="contact-list">
                 <ul>
-                    <li class="contact-card" v-for="(contactObj, i) in contacts" :class="[contacts.indexOf(contactObj) == indexActiveContact ? 'active-contact' : '']" :key="contactObj.name"
+                    <li class="contact-card" v-for="(contactObj, i) in contacts" :class="[contacts.indexOf(contactObj) == indexActiveContact ? 'active-contact' : '' , contactObj.visible == false ? 'card-visible-off' : '']" :key="contactObj.name"
                     @click="setIndexActiveContact(i)">
                     <div class="name-and-img">
                             <img class="profile-img" :src="'img/' + contactObj.avatar" alt="">
